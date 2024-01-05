@@ -26,14 +26,16 @@ function Edituser()
          e.preventDefault();
          //console.log(formvalue);
          const formData= {id:id,username:formvalue.username, email:formvalue.email, status:formvalue.status}; 
+        //  exios send data to specified link URL
          const res= await axios.put("http://localhost/reactcrudphp/api/user.php",formData);
          //let jsonres= res.data.json();        
         //    if(res.data.success)
         //    {
             setMessage(res.data.success);
-            setTimeout( ()=>{               
+            setTimeout( ()=>{ 
+                // setMessage("Data Updated SUccesfully")              
                 navigate('/userlist');
-            }, 1000);
+            }, 2000);
            
         //    }
         }   

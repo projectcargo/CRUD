@@ -7,7 +7,7 @@ function Footer() {
                 <div className="container w-full">
                     <div className="row">
                         <div className="col-md-12 f-flex text-center justify-content-sm-center">
-                            <p>COpyRight @Manish developers</p>
+                            <p>CopyRight @Manish developers</p>
                         </div>
                     </div>
                     </div>
